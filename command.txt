@@ -1,0 +1,87 @@
+SMPP v3.4 PDU Listesi
+
+    BIND_OPERATIONS :
+        bind_receiver
+        bind_transmitter
+        bind_transceiver
+        unbind
+
+
+    MESSAGE_SUBMISSION :
+        submit_sm
+        data_sm
+        deliver_sm
+         
+
+    QUERY_OPERATIONS :
+        query_sm
+
+
+    RESPONSE_OPERATIONS :
+        submit_sm_resp
+        deliver_sm_resp
+        query_sm_resp
+        bind_receiver_resp
+        bind_transmitter_resp
+        bind_transceiver_resp
+        unbind_resp
+
+
+    ESM_CLASS_OPERATIONS :
+        enquire_link
+        enquire_link_resp
+
+
+    ERROR_HANDLING :
+        generic_nack
+
+
+    CANCEL_OPERATIONS :
+        cancel_sm
+        cancel_sm_resp
+
+
+    REPLACE_OPERATIONS :
+        replace_sm
+        replace_sm_resp
+
+
+    ALERT_OPERATIONS :
+        alert_notification
+
+
+
+SMPP v5.0 PDU Listesi
+
+SMPP v5.0, v3.4'e göre bazı yeni PDU'lar eklemiştir ve mevcut PDU'larda iyileştirmeler yapılmıştır. İşte v5.0'daki eklenen veya güncellenen PDU'lar:
+
+    NEW_BIND_OPERATIONS :
+        outbind (Güncellenmiş)
+        bind_receiver_v5
+        bind_transmitter_v5
+        bind_transceiver_v5
+
+
+    NEW_MESSAGE_OPERATIONS :
+        submit_multi_v5
+        broadcast_sm
+        broadcast_sm_resp
+
+
+    NEW_QUERY_OPERATIONS :
+        query_broadcast_sm
+        query_broadcast_sm_resp
+
+
+    NEW_CANCEL_OPERATIONS :
+        cancel_broadcast_sm
+        cancel_broadcast_sm_resp
+
+
+    NEW_ALERT_OPERATIONS :
+        alert_notification_v5
+
+
+    NEW_ERROR_HANDLING :
+        generic_nack_v5
+
