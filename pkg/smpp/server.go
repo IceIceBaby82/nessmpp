@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/tarik/nessmpp/pkg/pdu"
+	"nessmpp/pkg/pdu"
 )
 
 // Server represents an SMPP server
