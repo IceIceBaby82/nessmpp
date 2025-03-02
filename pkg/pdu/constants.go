@@ -14,7 +14,7 @@ const (
 	IF_VERSION_50 string = "5.0"
 )
 
-// Command IDs
+// SMPP Command IDs
 const (
 	GENERIC_NACK          uint32 = 0x80000000
 	BIND_RECEIVER         uint32 = 0x00000001
@@ -52,8 +52,13 @@ const (
 	CANCEL_BROADCAST_SM_RESP uint32 = 0x80000113 // v5.0
 )
 
-// Command Status
+// SMPP Command Statuses
 const (
+	ESME_ROK              uint32 = 0x00000000 // No Error
+	ESME_RINVMSGLEN       uint32 = 0x00000001 // Message Length is invalid
+	ESME_RINVCMDID        uint32 = 0x00000002 // Invalid Command ID
+	ESME_RINVPASWD        uint32 = 0x0000000E // Invalid Password
+	ESME_RINVSYSID        uint32 = 0x0000000F // Invalid System ID
 	ESME_ROK              uint32 = 0x00000000 // No Error
 	ESME_RINVMSGLEN       uint32 = 0x00000001 // Message Length is invalid
 	ESME_RINVCMDLEN       uint32 = 0x00000002 // Command Length is invalid
